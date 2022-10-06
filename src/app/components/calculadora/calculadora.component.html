@@ -1,0 +1,12 @@
+<div>
+    <input type="number" [(ngModel)]="suma.sumando1">
+    <input type="number" [(ngModel)]="suma.sumando2">
+    <button (click)="calcular()">Calcular</button>
+    <div>
+        Resultado con ternaria:<span id="resultado" style="{{suma.resultado >=0 ? verde : rojo}}">{{suma.resultado}}</span>
+    </div>
+    <div>
+        Resultado con modelo:<span [style]="color">{{suma.resultado}}</span>
+    </div>
+    
+</div>
